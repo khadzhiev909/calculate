@@ -13,7 +13,6 @@ public class CalculateController {
     public CalculateController(CalculatorServise calculatorServise) {
         this.calculatorServise = calculatorServise;
     }
-
     @GetMapping
     public String welcome() {
         return calculatorServise.sayHello();
